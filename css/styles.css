@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {	
+--color-tomato: hsl(4, 100%, 67%);
+--color-dark-slate-grey: hsl(234, 29%, 20%);
+--color-charcoal-grey: hsl(235, 18%, 26%);
+--color-grey: hsl(231, 7%, 60%);
+--color-white: hsl(0, 0%, 100%);
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+main {
+	width: 100%;
+	container-type: inline-size;
+	padding-bottom: 5cqi;
+}
+
+.main-text {
+	margin: clamp(10px, 5cqi, 45px);
+}
+
+/* Stay Updated! */
+.main-text > p:first-child {
+	font-size: 11cqi;
+	font-weight: 700;
+	padding: 10cqi 0 6cqi 0;
+}
+
+/* Join..... */
+.main-text > p:nth-child(2) {
+	font-size: 4.27cqi;
+}
+
+ul {
+	list-style: none;
+	font-size: 4.27cqi;
+	padding: 6cqi 0 10cqi 0;
+}
+
+ul li {
+	line-height: 1.5em;
+	background: url('../assets/images/icon-list.svg') no-repeat;
+	padding-left: 8cqi;
+	background-size: 6cqi;
+}
+
+input {
+	width: 100%;
+	height: 15cqi;
+}
+
+.success-message {
+	display: none;
+}
+
+
+
+
+
+.attribution {
+	font-size: 11px; text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
