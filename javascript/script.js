@@ -2,8 +2,8 @@ const subscribeButtonInvalid = document.querySelector('.subscribe-button-invalid
 const subscribeButtonValid = document.querySelector('.subscribe-button-valid');
 const mainDiv = document.querySelector('main');
 const successDiv = document.querySelector('.success-message');
+const successEmail = document.querySelector('.success-email');
 let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
 
 function validation() {
 
@@ -21,6 +21,10 @@ function validation() {
 }
 
 function submitEmail() {
+
+	let email = document.querySelector('.email').value;
+
 	mainDiv.style.display = 'none';
 	successDiv.style.display = 'block';
+	successEmail.textContent = email;
 }

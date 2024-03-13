@@ -36,6 +36,8 @@ main {
 	width: 100%;
 	container-type: inline-size;
 	background-color: white;
+
+	display: none;
 }
 
 .desktop-figure {
@@ -89,12 +91,6 @@ input {
 	margin: 3cqi auto 0 auto;
 }
 
-.success-message {
-	display: none;
-	width: 100%;
-	
-}
-
 label {
 	font-size: 3.5cqi;
 	font-weight: 700;
@@ -124,6 +120,43 @@ button {
 .subscribe-button-valid {
 	cursor: pointer;
 	display: none;
+}
+
+.success-message {
+	position: relative;
+	display: none;
+	width: 90%;
+	margin: 0 auto 4cqi auto;
+	height: 95%;
+	container-type: inline-size;
+	display: block;
+}
+
+.success-message > img {
+	width: 20cqi;
+	padding: 20cqh 0 10cqi 0;
+}
+
+.success-message > p:nth-child(2) {
+	font-size: clamp(.5rem, 13cqi, 4rem);
+	font-weight: 700;
+	padding-bottom: 8cqi;
+}
+
+.success-message > p:nth-child(3) {
+	font-size: clamp(.5rem, 6cqi, 1rem);
+}
+
+.success-message > button {
+	position: absolute;
+	bottom: 0;
+	max-height: 50px;
+}
+
+@media (max-width: 275px) {
+	.success-message {
+		height: 60%;
+	}
 }
 
 @media (min-width: 961px) {
