@@ -3,11 +3,12 @@ const subscribeButtonValid = document.querySelector('.subscribe-button-valid');
 const mainDiv = document.querySelector('main');
 const successDiv = document.querySelector('.success-message');
 const successEmail = document.querySelector('.success-email');
+const dismissButton = document.querySelector('.dismiss-button');
 let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
 function validation() {
 
-	let email = document.getElementById('email').value;
+	let email = document.querySelector('#email').value;
 
 	if (email.match(pattern)) {
 		console.log("valid");
@@ -22,9 +23,13 @@ function validation() {
 
 function submitEmail() {
 
-	let email = document.querySelector('.email').value;
+	let email = document.querySelector('#email').value;
 
 	mainDiv.style.display = 'none';
 	successDiv.style.display = 'block';
 	successEmail.textContent = email;
+}
+
+function dismissButtonSelected() {
+	location.reload();
 }
